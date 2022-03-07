@@ -1,7 +1,7 @@
 variable "greeting" {
-    description = "Greetings variable"
-    type = string
-    default = "dummy"
+  description = "Greetings variable"
+  type        = string
+  default     = "dummy"
 }
 
 terraform {
