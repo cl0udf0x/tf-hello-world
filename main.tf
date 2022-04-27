@@ -1,9 +1,3 @@
-variable "greeting" {
-  description = "Greetings variable"
-  type        = string
-  default     = "dummy"
-}
-
 terraform {
   required_version = ">= 0.12.26"
 }
