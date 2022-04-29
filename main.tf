@@ -20,11 +20,6 @@ module "role_ecs_task" {
   enabled          = true
   context          = module.sw-services-iam-label
   role_description = module.sw-services-iam-label.id
-  policy_documents = [
-    "${data.aws_iam_policy_document.sw_services_data.json}",
-    "${data.aws_iam_policy_document.sw_services_sqs_s3_data.json}",
-    "${data.aws_iam_policy_document.sw_services_reporting_data.json}"
-  ]
   managed_policy_arns = [
     "arn:aws:iam::aws:policy/AmazonSESFullAccess"
   ]
